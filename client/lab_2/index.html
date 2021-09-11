@@ -1,40 +1,64 @@
-YOUR NAME Lab 2: Intro to HTML
 
-Selectors
-Main Page
+<html>
+    <head>
+        <link rel = 'stylesheet' href= 'styles.css'/>
+        <title>Reno Yeung Lab 1</title>
+    
+    </head>
+    <body>
+    <div class = 'wrapper'>
+    <div class ='title'>
+        <h1>Reno Yeung Lab 1: Intro to HTML</h1>
+    </div>
 
-First, the basics.
+    <p></p>
 
-You need the following to build your website.
+    <div>
+    <nav>
+    <a href = 'selectors.html'>Selectors</a> 
+    <a href = 'index.html'>Main Page</a>
+    </nav>
+    </div> 
 
-HTML and CSS
-Javascript
-Node.js
-And other web development frameworks
+    <div class = 'subtitle'>
+        <h2>First, the basics.</h2>
+    </div>
 
-You should list your top 3 goals for the class below.
+    <div class = 'section_1'>
+        <p>3 unordered list of elements</p>
+        <ul>
+            <li>a</li>
+            <li>li</li>
+            <li>p</li>
+        </ul>  
+    
+        <p>Top five favorite albums</p>
+        <ol>
+            <li>Donda by Kanye West</li>
+            <li>Certified Lover Boy by Drake</li>
+            <li>Illuminate by Shawn Mendes</li>
+            <li>Summer Of Love by Shawn Mendes</li>
+            <li>Divide by Ed Sheeran</li>
+        </ol>
+    </div>
 
-Learn front-end web design
-Learn new programming languages
-Learn how to work with others in a technical space
-Learn popular web dev frameworks
+    <div class = 'section_2'>
+       <div class = 'subtitle'>
+        <h2>Lets Try Some Inline Elements</h2>
+    </div> 
+        <p>Use this to draw <em>attention</em> </p>
+        <p>Use to this give a <strong> impression </strong> </p>
+        <p> Or sometimes you want <em><strong> both </strong></em></p>
+    </div>
 
-Let's Try Some Inline Elements
-
-Sometimes you want to draw attention to something in a line of text.
-
-Sometimes you want to strongly emphasize something in the text.
-
-Sometimes you want to do both.
-
-Empty Elements
-
-Soft line breaks can't wrap anything. Neither can image tags, or hard lines.
-Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.
-
-Images 
-
-Don't forget to use alt text on your images. It's important for accessibility.
-
-Include a hyperlink here to your github repository for class.
-If you want your repo to be private, be sure to invite Prof A as a "collaborator."
+        <h2> Empty Elements </h2>
+        <p> Hello Professor, <br/> I have a question about VScode.... </p>
+        <hr/> 
+        <h2> Images </h2>
+        <img src='images/mochi.jpg' width = '75' alt = 'a mochi ball in a bubble'/> 
+        <img src ='images/mochi.gif' width = '75' alt = 'a dancing mochi'/>
+        <img src='images/mochi.png' width = '75' alt = 'a mochi ball' /> 
+        <img src='images/mochi.svg' width = '75' alt = 'a mochi ball with bezier handles' /> 
+    </div>
+    </body>
+</html>
