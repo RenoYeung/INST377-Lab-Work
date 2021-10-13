@@ -3,21 +3,21 @@ export default {
     username: 'ubuntu',
     password: 'Veracrypt@12!',
     database: 'Dining_Hall_Tracker',
-    host: '54.196.33.144',
+    host: '3.90.169.27',
     dialect: 'mysql'
   },
   test: {
     username: 'ubuntu',
     password: 'Veracrypt@12!',
     database: 'Dining_Hall_Tracker',
-    host: '54.196.33.144',
+    host: '3.90.169.27',
     dialect: 'mysql'
   },
   production: {
     username: 'ubuntu',
     password: 'Veracrypt@12!',
     database: 'Dining_Hall_Tracker',
-    host: '54.196.33.144',
+    host: '3.90.169.27',
     dialect: 'mysql'
   }
 };
