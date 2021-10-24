@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
+      ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    background-color: lightblue;
+  }
+  
+  /* Page Layout */
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper {
+    display: flex;
+  }
+  .container {
+    max-width: 960px;
+    margin-top: 25px;
+  }
+  
+  .container button{
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 150px;
+  }
+  
+  #mapid { 
+      height: 500px; 
+    }
