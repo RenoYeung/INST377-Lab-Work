@@ -1,11 +1,13 @@
 async function windowActions() {
   const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
-
+  const searchInput = document.querySelector('.search');
+  const suggestions = document.querySelector('.suggestions');
   const request = await fetch(endpoint);
   const cities = await request.json();
-  const ACCESSTOKEN = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+  const ACCESSTOKEN = 'pk.eyJ1IjoieHhoeWRyYXgiLCJhIjoiY2t1b3N3OXpkNGVsNjJxbnpiNTh6M3hqMCJ9.yanVbgvA5-MpTgB9eKS5Og';
 
   const mymap = L.map('mapid').setView([51.505, -0.09], 13);
+  console.log(mymap);
   L.tileLayer(`https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=${ACCESSTOKEN}`, {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -28,7 +30,7 @@ async function windowActions() {
 
   function displayMatches(event) {
     const matchArray = findMatches(event.target.value, cities);
-
+    matchArray.slice(0, 5);
     const html = matchArray.map((place) => {
       const {name} = place;
 
@@ -41,9 +43,6 @@ async function windowActions() {
     }).join('');
     suggestions.innerHTML = html;
   }
-
-  const searchInput = document.querySelector('.search');
-  const suggestions = document.querySelector('.suggestions');
 
   searchInput.addEventListener('keyup', (evt) => { displayMatches(evt); });
 }
